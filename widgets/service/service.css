@@ -1,0 +1,269 @@
+/* CSS Document */
+
+
+.top-border{
+	position: absolute;
+	right: 0;
+	left: 0;
+	border-bottom-style: solid;
+	border-width: 1px;
+	height: 32px;
+	width: 100%;
+	border-color: #14a1ff;
+	display: table;
+	cursor: pointer;
+	padding-left: 20px;
+}
+.tab{
+	padding-left: 30px;
+	display: table-cell;
+	cursor: pointer;
+	vertical-align: middle;
+	font-weight: normal;
+}
+/***/
+.tab-bus {
+	background: url("../../assets/images/service/service1.png") no-repeat left center ;
+}
+
+.tab-bus:hover{
+	background: url("../../assets/images/service/service2.png") no-repeat left center;
+	color: #14a1ff;
+}
+.tab-service{
+	background: url("../../assets/images/service/service1.png") no-repeat left center;
+}
+.tab-service-clicked{
+	background: url("../../assets/images/service/service2.png") no-repeat left center;
+	color: #14a1ff;
+}
+
+/***/
+.tab-drive {
+	background: url("../../assets/images/service/layer1.png") no-repeat left center;
+}
+.tab-drive:hover{
+	background: url("../../assets/images/service/layer2.png") no-repeat left center;
+	color: #14a1ff;
+}
+
+.tab-drive-clicked {
+	background: url("../../assets/images/service/layer2.png") no-repeat left center;
+	color: #14a1ff;
+}
+
+.btn-panel{
+	margin-top: 5px;
+	height: 28px;
+	/* width: 80%; */
+	/* display: table; */
+	text-align: center;
+	line-height: 25px;
+	margin-left: 5px;
+}
+
+.btn-panel>label{
+	background-position: 5px;
+	/* padding-left: 25px; */
+	font-size: 12px;
+	/* padding-top: 3px; */
+	font-weight: normal;
+	/* text-align: center; */
+	display: inline-block;
+	padding-left: 25px;
+	padding-right: 10px;
+}
+/**隐藏分页最后一页*/
+.pagination > li:last-child{
+	display: none;
+}
+.pagination > li{
+	cursor: pointer;
+}
+.service{
+	/*padding-left: 15px;*/
+	color: #C9C9C9;
+	display: table-cell;
+	vertical-align: middle;
+	border: solid;
+	/*width: 48px;*/
+	border-width: 1.3px;
+	border-color: #C9C9C9;
+	cursor: pointer;
+}
+
+.service-add {
+	background: url("../../assets/images/service/add.png") no-repeat left center;
+	border-right-style: none;
+}
+.service-add:hover{
+	color: #14a1ff;
+}
+
+.service-details {
+	background: url("../../assets/images/service/details.png") no-repeat left center;
+}
+.service-details:hover{
+	color: #14a1ff;
+}
+
+.service-favorite{
+	background: url("../../assets/images/service/favorite.png") no-repeat left center;
+}
+.service-favorite:hover{
+	color: #14a1ff;
+}
+
+.last-line{
+	margin-top: 8px;
+	border-top: 1px solid #ddd;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+	/*padding: 8px;*/
+	/*line-height: 1.42857143;*/
+	/*vertical-align: top;*/
+	border-top: 1px none #ddd;
+}
+/*.line{*/
+	/*width:100%;*/
+	/*height: 1px;*/
+	/*background-color:#14a1ff;*/
+	/*margin-top: 0;*/
+/*}*/
+
+#layers{
+	display: none;
+}
+
+.content-border{
+	position: absolute;
+	top: 32px;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+#bus {
+
+}
+
+#drive {
+	display: none;
+}
+
+#layerContainer{
+	display: none;
+}
+
+#pagers{
+	display: inline-block;
+	clear: both;
+}
+.pagination > li > a, .pagination > li > span {
+
+
+	padding: 5px 6px;
+	margin-left: -1px;
+	line-height: 1.42857143;
+	color: #337ab7;
+	text-decoration: none;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	font-family: "Microsoft YaHei";
+	font-size: 13px;
+}
+
+.page-div {
+	text-align: center;
+}
+
+#arrow-left {
+
+	position: absolute;
+	top: 27px;
+	left: 68px;
+}
+#arrow-right {
+	position: absolute;
+	top: 27px;
+	right: 75px;
+	display: none;
+}
+
+.service-label{
+	font-size: 11px;
+	font-family: "Microsoft YaHei";
+	color: #4c4c4c;
+	font-weight: normal;
+	margin-left: 5px;
+}
+/**以下代码用于修改图层管理样式**/
+/*滑块样式*/
+.slider-handle{
+	background: url("../../assets/images/layer/slider.png") no-repeat;
+}
+
+/*已选中颜色*/
+.slider-selection {
+	position: absolute;
+	background-color: #14a1ff;
+	/* background-image: -webkit-linear-gradient(top, #f9f9f9 0%, #f5f5f5 100%); */
+	/*background-image: -o-linear-gradient(top, #f9f9f9 0%, #f5f5f5 100%);
+	/!* background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%); *!/
+	/!* background-repeat: repeat-x; *!/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#fff5f5f5', GradientType=0);
+	-webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 4px;*/
+	/* background-color: #14a1ff; */
+}
+/*未选中颜色*/
+.slider-track-low, .slider-track-high {
+	position: absolute;
+	background: #cecece;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.slider.slider-horizontal .slider-track {
+	height: 3px;
+}
+.slider.slider-horizontal{
+	margin-top: 5px;
+}
+
+.layer-item{
+
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.layer-visible{
+	text-align: right;
+	float: right;
+	margin-right: 15px;
+	cursor: pointer;
+}
+.layer-inner-row{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.slider-custom{
+	width: 242px;
+	margin-top: 6px;
+}
+.layer-item hr{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #e6e6e6;
+}
+
+
+

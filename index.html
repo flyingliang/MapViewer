@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+
+    <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>-->
+    <title>地图应用模板</title>
+
+    <!--Styles-->
+    <link rel="stylesheet" type="text/css" href="http://localhost:8080/arcgis_js_api/library/3.15/3.15/esri/css/esri.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:8080/arcgis_js_api/library/3.15/3.15/dijit/themes/soria/soria.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/slider.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrapmap.css">
+
+
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+
+</head>
+<body class="soria">
+
+<div id="head-container">
+    <div class="top-nav-bar">
+
+        <a href="../main/main.html" target="_blank" id="home">门户首页</a>
+        <a id="resource">资源中心</a>
+        <a href="#" id="app" >专题应用</a>
+        <a id="api" href="#">地图API</a>
+        <a id="api" href="http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineCommunity/MapServer">三维地图</a>
+        
+
+        <div class="right-layout">
+
+            <a id="login-info" class="none-underline"></a>
+
+            <a id="lbl-login"> 登录 </a>
+            <a id="lbl-logout"></a>
+        </div>
+    </div>
+
+    <div class="head-inner-main">
+        <img class="logo" src="assets/images/logo.png" >
+        <div class="head-query-group">
+            <input id="product_search" type="text" data-provide="typeahead"
+                   class="search-text-box" autocomplete="off"
+                   placeholder="输入搜索内容">
+            <button class="search-btn-execute" id="btn-poi-query">搜索</button>
+        </div>
+    </div>
+</div>
+
+<!--左侧面板-->
+<div id="left-container">
+
+    <div class="inner-left">
+        <div class="search-clicked" id="search"></div>
+        <div class="drive" id="drive"></div>
+        <div class="service" id="service"></div>
+    </div>
+    <div class="inner-right">
+        <div class="left-content-panel" id="innerContentPanel">
+            <iframe id="widgetContainer"  name="widgetContainer" class="widgetContainer" frameborder="0"></iframe>
+        </div>
+
+        <div class="copy-panel" id="mapCopyright">
+            <p>北京捷泰天域信息技术有限公司</p>
+            <p>版权所有</p>
+        </div>
+
+        <div class="left-foot-panel">
+            <a class="hand" id="help">帮助</a><span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+            <a class="hand" id="suggest">意见反馈</a>
+        </div>
+    </div>
+</div>
+
+<!--分割按钮-->
+<div id="slider" class="expand"></div>
+
+<!--右侧面板-->
+<div id="right-container">
+    <!--工具栏-->
+    <div class="right-toolbar">
+        <div class="left-layout">
+            <div id="region">
+
+            </div>
+        </div>
+        <div class="tool-right-part">
+
+            <img id="distance" src="assets/images/tools/distance1.png" title="测量距离" alt="not">
+            <img id="area" src="assets/images/tools/area1.png" title="测量面积" alt="not">
+            <img id="mark" src="assets/images/tools/mark1.png" title="标记" alt="not">
+            <img id="swipe" src="assets/images/tools/swipe1.png" title="卷帘" alt="not">
+            <div id="swipeMenu" class="swipeMenu">
+                <div class="dropDownMenuItem" id="swipeVertical">
+                    <span class="menuLabel">水平</span>
+                </div>
+                <div class="dropDownMenuItem" id="swipeHorizontal">
+                    <span class="menuLabel">垂直</span>
+                </div>
+                <div class="dropDownMenuItem" id="swipeScope">
+                    <span class="menuLabel">放大镜</span>
+                </div>
+                <div class="dropDownMenuItem" id="swipeInvert">
+                    <span class="menuLabel">互换</span>
+                </div>
+            </div>
+
+            <img id="multi" src="assets/images/tools/mutil1.png" title="多时相" alt="not">
+
+            <img id="tool-split">
+
+            <img id="tool" src="assets/images/tools/more.png" title="更多工具" alt="not">
+            <img id="arrow" src="assets/images/tools/adown1.png" style="margin-left: 0;" alt="not">
+            <img id="full" src="assets/images/tools/full1.png" title="全屏" alt="not">
+
+        </div>
+    </div>
+    <div id="drop-down">
+        <div class="drop-down-item" id="book-mark">
+            <img class="icon" src="assets/images/common/book.png">
+            <label class="description">书签</label>
+        </div>
+
+        <div class="drop-down-item" id="map-correct">
+            <img class="icon" src="assets/images/common/location.png">
+            <label class="description">地图纠错</label>
+        </div>
+    </div>
+
+
+    <!--弹出窗口-->
+    <div class="content" >
+
+        <div class="modal fade" id="details-dialog" tabindex="-1" role="dialog" aria-labelledby="mainDialogLabel" aria-hidden="true">
+
+            <div class="modal-dialog details-modal">
+
+                <div class="modal-content popup-details">
+
+                    <div class="modal-header details-title ">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                        <label class="modal-title details-name"></label>
+                    </div>
+
+                    <div class="modal-body" style="width: 100%; height: 100%;">
+
+                        <iframe id="dialog-container" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content" id="mul-panel">
+
+        <!-- Map Switcher Button -->
+        <div id="switcher" class="switcher"></div>
+        <div id="switcher-down" class="switcher"></div>
+
+        <div id="map1" class="multi1">
+            <div id="LayerSwipe"> </div><!-- Swipe Dom -->
+
+            <div class="multi-container">
+                <div class="panel panel-default multi-left localDojoCss" id="mainSlider">
+                    <div class="panel-body">
+                        <div class="slider-btn left-layout yearMinus" id="yearMinus"></div><!-- Year Navigator -->
+                        <div id="left-slider"></div>
+                        <div class="slider-btn right-layout yearIncrease" id="yearIncrease"></div><!-- Year Navigator -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="split" id="split"></div>
+
+        <div id="map2" class="attach">
+            <div class="multi-container">
+                <div class="panel panel-default multi-right localDojoCss" id="attachSlider">
+                    <div class="panel-body">
+                        <div class="slider-btn left-layout yearMinus" id="attachMinus"></div><!-- Year Navigator -->
+                        <div id="right-slider"></div>
+                        <div class="slider-btn right-layout yearIncrease" id="attachIncrease"></div><!-- Year Navigator -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content" id="mask" style="display: none;"></div>
+    <!--等待动画-->
+    <div class="content" id="busy-indicator"></div>
+    <!--toaster-->
+    <div class="content" id="toast-panel">
+
+        <div class="toaster">
+            <p id="toastInfo"></p>
+        </div>
+    </div>
+
+    <!--登录面板，此处写法为了解决ie8中登录面板不能弹出BUG-->
+    <!--<div id="small-popup" title="small" data-dojo-type="dijit/Dialog">-->
+        <!--<p>hehe</p>-->
+    <!--</div>-->
+    <div class="content" id="small-popup">
+        <iframe frameborder="0" name="smallContainer"></iframe>
+    </div>
+</div>
+
+<script type="text/javascript" src="libs/jquery/jquery.js"></script>
+<script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="libs/bootstrap/js/bootstrap-typeahead.min.js"></script>
+<script type="text/javascript" src="libs/bootstrap/js/bootstrap-slider.js"></script>
+
+<script type="text/javascript" src="libs/cryptojs/rollups/aes.js"></script>
+<script type="text/javascript" src="env.js"></script>
+<script type="text/javascript" src="http://localhost:8080/arcgis_js_api/library/3.15/3.15/init.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

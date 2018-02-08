@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../libs/jquery/jquery.js"></script>
+    <script src="../../libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../env.js"></script>
+    <script src="../../../../arcgis_js_api/library/3.13/init.js"></script>
+
+    <script src="../../libs/bootstrap/js/bootstrap-slider.js"></script>
+    <script src="buffer.js"></script>
+
+    <link rel="stylesheet" href="buffer.css" type="text/css">
+
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../../libs/bootstrap/css/slider.css"/>
+
+    <link rel="stylesheet" href="buffer.css">
+</head>
+<body>
+<div class="panel">
+    <label>自定义位置：</label>
+    <img src="../../assets/images/buffer/drawPoint_normal.png" id="draw-point">
+    <img src="../../assets/images/buffer/drawLine_normal.png" id="draw-polyline">
+    <img src="../../assets/images/buffer/drawPolygon_normal.png" id="draw-polygon">
+    <!--<button class="btn btn-primary" id="btn-clear"> 清空</button>-->
+</div>
+<div class="panel">
+    <label>查找半径：</label>
+    <input class="slider" id="query-radius" type="text">
+</div>
+<table id="poilist" class="table"></table>
+<hr>
+
+<div class="container">
+    <table id="results"></table>
+</div>
+</body>
+</html>

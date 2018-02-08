@@ -1,0 +1,13 @@
+#result-panel{
+    position: absolute;
+    bottom: 15px;
+    top: 44px;
+    left: 0;
+    right:0;
+    display: none;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,82 @@
+{
+    "routeTaskURL": "http://124.205.245.98:9923/OneMapServer/rest/services/CQ_all_network/NAServer/Route",
+    "costs": {
+        "time":     "Minutes",
+        "distance": "Meters"
+    },
+
+    "restrictions": {
+        "oneway": "Oneway",
+        "highway": "Highway",
+        "turn": "Turn"
+    },
+
+    "poi": {
+        "url": "http://124.205.245.98:9923/OneMapServer/rest/services/CQ_POI/MapServer/0",
+        "displayField": "name",
+        "expression": "name = '${name}'"
+    },
+
+    "distanceunit": {
+        "scale":     5000,
+        "smallunit": {
+            "label":      "米",
+            "conversion": "1",
+            "precision":  2
+        },
+        "largeunit": {
+            "label":      "公里",
+            "precision":  1,
+            "conversion": 1000
+        }
+    },
+
+    "startsymbol": {
+
+        "url": "assets/images/common/start.png",
+        "height": 25,
+        "width": 21,
+        "type": "esriPMS",
+        "angle": -30,
+        "xoffset": 0,
+        "yoffset": 12
+    },
+
+    "endsymbol": {
+
+        "url": "assets/images/common/end.png",
+        "height": 25,
+        "width": 21,
+        "type": "esriPMS",
+        "angle": -30,
+        "xoffset": 0,
+        "yoffset": 12
+
+    },
+
+    "passsymbol": {
+        "url": "assets/images/common/pass.png",
+        "height": 21,
+        "width": 17,
+        "type": "esriPMS",
+        "angle": -30,
+        "xoffset": 0,
+        "yoffset": 10
+    },
+
+    "segmentSymbol": {
+        "type":  "esriSLS",
+        "style": "esriSLSSolid ",
+        "color": [255, 0, 0, 180],
+        "width": 4
+    },
+
+    "routeSymbol": {
+
+        "type":  "esriSLS",
+        "style": "esriSLSSolid",
+        "color": [161, 171, 187, 255],
+        "width": 4
+    }
+
+}

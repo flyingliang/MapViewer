@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../libs/jquery/jquery.js"></script>
+   <!-- <script src="../../libs/bootstrap/js/bootstrap.min.js"></script>-->
+    <script src="../../env.js"></script>
+    <script src="../../../../arcgis_js_api/library/3.13/init.js"></script>
+
+   <!-- <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.min.css">-->
+    <script src="input.js"></script>
+    <link rel="stylesheet" href="correction.css">
+</head>
+<body>
+
+<form id="correct-info" role="form" method="post" enctype="multipart/form-data">
+
+    <!--normal info -->
+    <div id="info">
+        <div class="info-row">
+
+            <label class="left-td">错误类型</label>
+            <label id="name-err" class="corr-type-clicked">名称错误</label>
+            <label id="location-err" class="corr-type">位置错误</label>
+        </div>
+
+        <div class="info-row">
+            <label class="left-td">标注位置</label>
+            <img id="draw-right" src="../../assets/images/correction/right.png"  alt="no" title="标注正确位置">
+            <img id="draw-wrong" src="../../assets/images/correction/wrong.png" alt="no img" title="标注错误位置" style="display: none">
+            <!--<img id="draw-right" src="../../assets/images/correction/right.png" style="display: none" alt="no">-->
+           <!-- <img id="draw-wrong" src="../../assets/images/correction/wrong.png" alt="no img">
+            <img id="draw-right" src="../../assets/images/correction/right.png" alt="no img">-->
+            <!--<span class="info-required">*</span>-->
+        </div>
+
+        <div class="info-row">
+            <label class="left-td">名称&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="input"  id="info-name" name="infoname">
+            <span class="info-required">*</span>
+        </div>
+
+        <div class="info-row">
+            <label class="left-td">所属省份</label>
+            <select  class="input" id="province-list">
+
+            </select>
+            <!--<span class="info-required">*</span>-->
+        </div>
+
+        <div class="info-row">
+            <label class="left-td">所属城市</label>
+            <select class="input" id="city-list">
+            </select>
+            <!--<span class="info-required" >*</span>-->
+        </div>
+
+        <div class="info-row">
+            <label class="left-td">描述&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <textarea rows="4" id="description" name="description" placeholder="输入描述信息"></textarea>
+            <span class="info-required" >*</span>
+        </div>
+
+        <div class="info-row file-panel">
+            <label class="left-td" >辅助图片</label>
+            <img class="upload" src="../../assets/images/correction/upload.png">
+            <!--<label class="right-td">建议尺寸150*150</label>-->
+            <input type='text' name='textfield' id='textfield' placeholder="建议尺寸150*150" disabled="disabled" class='txt'/>
+            <!--<label name='textfield' id='textfield' class='txt'></label>-->
+            <!--<input type='button' class='btn'/>-->
+            <!--<img src="../../assets/images/common/clear.png"  class="clear" id="clear">-->
+
+            <input type="file" accept="image/jpeg,image/png,image/gif" name="fileupload" class="file" id="fileupload" size="28"
+                   onchange="document.getElementById('textfield').value=this.value" />
+        </div>
+
+        <!--<div></div>-->
+        <!--<div class="info-row file-panel">-->
+            <!--&lt;!&ndash;<input type="file"  name="fileupload">&ndash;&gt;-->
+            <!--<input type='text' name='textfield' id='textfield' disabled="disabled" class='txt'/>-->
+            <!--&lt;!&ndash;<label name='textfield' id='textfield' class='txt'></label>&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type='button' class='btn'/>&ndash;&gt;-->
+            <!--<img src="../../assets/images/common/clear.png"  class="clear" id="clear">-->
+
+            <!--<input type="file" accept="image/jpeg,image/png,image/gif" name="fileupload" class="file" id="fileupload" size="28"-->
+                   <!--onchange="document.getElementById('textfield').value=this.value" />-->
+        <!--</div>-->
+
+        <div style="  margin-left: 100px;margin-top: 80px;">
+            <!--<div class="info-btn next" id="next"></div>-->
+            <label class="btn-correction" id="next">下一步</label>
+        </div>
+    </div>
+
+    <!--advance params -->
+    <div id="adv-info">
+
+        <div class="info-row">
+            <label class="left-td">姓名</label>
+            <input type="text" class="input"  id="author" name="author">
+            <span class="info-required" >*</span>
+        </div>
+
+        <div class="info-row">
+            <label class="left-td">电话</label>
+            <input type="tel"  class="input" placeholder="手机/固话（区号电话号码）" id="telphone" name="telphone">
+            <span class="info-required" >*</span>
+        </div>
+
+        <div class="info-row">
+            <label class="left-td">邮箱</label>
+            <input type="email" class="input"  id="email" name="email" placeholder="example@sina.cn">
+            <span class="info-required" >*</span>
+        </div>
+
+        <div style="margin-left: 50px;margin-top: 40px;">
+            <label id="btn-back" class="btn-correction">上一步</label>
+            <label class="btn-correction" id="btn-submit">&nbsp;提&nbsp;交&nbsp;</label>
+        </div>
+    </div>
+
+    <!--<div class="btn-group">
+        <button id="btn-submit" class="btn btn-primary">提交信息</button>
+    </div>-->
+</form>
+
+<!--<div>
+    <button  type="button" class="info-btn submit" id="btn-submit"></button>
+</div>-->
+</body>
+</html>

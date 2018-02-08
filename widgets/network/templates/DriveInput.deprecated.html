@@ -1,0 +1,37 @@
+<div>
+
+    <div class="${baseClass}Left">
+        <img src="../../assets/images/drive/change.png">
+    </div>
+
+    <div class="${baseClass}Middle">
+
+        <div class="${baseClass}HBox">
+            <img src="../../assets/images/drive/start.png">
+
+            <input type="text" class="${baseClass}Box" data-dojo-attach-point="inputNode" placeholder="请输入起点">
+            <img src="../../assets/images/drive/add.png" data-dojo-attach-event="click:_imgClicked">
+        </div>
+
+        <div data-dojo-attach-point="passesNode">
+
+            <div class="${baseClass}HBox">
+
+                <img src="../../assets/images/drive/start.png">
+                <input type="text" class="input-box" placeholder="请输入途径点">
+                <img src="../../assets/images/drive/minus.png">
+            </div>
+        </div>
+
+        <div id="end" class="${baseClass}HBox">
+
+            <img src="../../assets/images/drive/end.png">
+            <input type="text" class="input-box" placeholder="请输入终点">
+
+        </div>
+    </div>
+
+    <div class="${baseClass}Right">
+        <a id="query" class="${baseClass}Label">搜索</a>
+    </div>
+</div>

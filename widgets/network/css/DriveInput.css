@@ -1,0 +1,63 @@
+/* CSS Document */
+.line{
+    background-color: #e6e6e6;
+}
+
+.inputWidgetBox{
+
+    height: 30px;
+    width: 203px;
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1.3px;
+    border-color: #c9c9c9;
+}
+
+/*.content-border{*/
+    /*position: absolute;*/
+    /*top: 32px;*/
+    /*right: 0;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+/*}*/
+
+
+.inputWidgetHBox{
+
+    display: table-row;
+    cursor: pointer;
+
+}
+/*
+
+.service-label{
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    color: #4c4c4c;
+}
+*/
+
+.inputWidget{
+
+    display:table;
+    margin-top: 12PX;
+}
+
+.inputWidgetLabel{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #848484;
+}
+/*
+.start{
+    background: url("../images/start.png") no-repeat left center;
+}
+.end{
+    background: url("../images/end.png") no-repeat left center;
+}
+.minus{
+    background: url("../images/minus.png") no-repeat left center;
+}*/
+div img{
+    cursor: pointer;
+}

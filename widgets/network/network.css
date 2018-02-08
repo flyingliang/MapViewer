@@ -1,0 +1,334 @@
+/* CSS Document */
+
+.top-border{
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*left: 0;*/
+    border-bottom-style: solid;
+    border-width:1px;
+    height: 32px;
+    width: 100%;
+
+    border-color:#14a1ff;
+    display: table;
+    cursor: pointer;
+    padding-left: 40%;
+}
+
+.tab{
+    padding-left: 30px;
+    display: table-cell;
+    cursor: pointer;
+    vertical-align: middle;
+    font-weight: normal;
+}
+/***/
+.tab-bus {
+    background: url("../../assets/images/drive/bus1.png") no-repeat left center ;
+}
+
+.tab-bus:hover{
+    background: url("../../assets/images/drive/bus2.png") no-repeat left center;
+    color: #14a1ff;
+}
+
+.tab-bus-clicked{
+    background: url("../../assets/images/drive/bus2.png") no-repeat left center;
+    color: #14a1ff;
+}
+
+/***/
+.tab-drive {
+    background: url("../../assets/images/drive/drive1.png") no-repeat left center;
+}
+.tab-drive:hover{
+    background: url("../../assets/images/drive/drive2.png") no-repeat left center;
+    color: #14a1ff;
+}
+
+.tab-drive-clicked {
+    background: url("../../assets/images/drive/drive2.png") no-repeat left center;
+    color: #14a1ff;
+}
+
+
+.line{
+    background-color: #e6e6e6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input-box{
+    border-color: #c9c9c9;
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    height: 36px;
+    padding-bottom: 0;
+    padding-left: 6px;
+    padding-top: 8px;
+    width: 93%;
+    padding-right: 22px;
+}
+
+.input-box:focus{
+    outline: none;
+}
+
+.content-border{
+    position: absolute;
+    top: 32px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#bus {
+
+}
+
+#drive {
+    display: block;
+}
+
+/*#pagers{*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+/*}*/
+
+#arrow-left {
+
+    position: absolute;
+    top: 27px;
+    /*left: 36px;*/
+    left: 50%;
+}
+
+#arrow-right {
+    position: absolute;
+    top: 27px;
+    right: 120px;
+    display: none;
+}
+
+.input-top{
+
+    display:table;
+    width: 100%;
+    /*margin-top: 12PX;*/
+}
+.passes{
+
+}
+
+.input-top .left{
+
+    width: 10%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.input-top .middle{
+    display: table;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.input-top .right{
+    /**/
+    width: 15%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #FAFCFF;
+    cursor: pointer;
+    padding-left: 10px;
+    border-left-style: solid;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #e6e6e6;
+}
+.input-top .right:hover{
+    background-color: #14a1ff;
+}
+
+.input-option{
+    display: table;
+    height: 45px;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.adv{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
+    cursor: pointer;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #848484;
+    font-weight: normal;
+}
+.pass-img{
+    margin-right: 4px;
+}
+.btn-minus{
+    /*margin-left: -10px;*/
+    /*margin-left: -18px;*/
+    /*background-color: gainsboro;*/
+    /*height: 16px;*/
+
+    position: absolute;
+    top: 16px;
+    right: 7px;
+}
+#add-point{
+    /*margin-left: -19px;*/
+    /*margin-left: -18px;*/
+    /*background-color: gainsboro;*/
+    /*height: 16px;*/
+}
+
+.btn-minus-chrome{
+    /*margin-left: -17px;*/
+    margin-left: -19px;
+    height: 16px;
+    background-color: gainsboro;
+}
+
+.distance {
+    background: url("../../assets/images/common/opt1.png") no-repeat left center;
+}
+/*.distance:hover{
+    background: url("../../assets/images/common/opt2.png") no-repeat left center;
+}*/
+.distance-clicked{
+    background: url("../../assets/images/common/opt2.png") no-repeat left center;
+}
+
+.speed{
+    background: url("../../assets/images/common/chk1.png") no-repeat left center;
+}
+/*.speed:hover{
+   background: url("../../assets/images/common/chk2.png") no-repeat left center;
+}*/
+.speed-clicked{
+    background: url("../../assets/images/common/chk2.png") no-repeat left center;
+}
+
+
+.results{
+    /**/
+    border: solid;
+    border-color: #e0e0e0;
+    background-color: #FAFCFF;
+    border-width: 1px;
+    padding-left: 5px;
+}
+.results a{
+    /**/
+    cursor: pointer;
+    font-size: 11px;
+    font-family: "Microsoft YaHei";
+    color: #8f8f8f;
+    margin-left: 7px;
+}
+#info-results{
+    display: none;
+    margin-top: -3px;
+}
+#no-speed{
+
+}
+.hor-box {
+
+    /*display: table-row;*/
+    position: relative;
+    cursor: pointer;
+
+}
+.route-item{
+    border-color: #ddd;
+    /* border: solid; */
+    border-width: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom-style: dashed;
+
+}
+
+/*
+
+.service-label{
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    color: #4c4c4c;
+}
+*/
+
+.drive-label{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #848484;
+
+}
+a:focus, a:hover{
+    text-decoration: none;
+}
+.drive-label:hover{
+    color: #ffffff;
+}
+
+.start{
+    background: url("../../assets/images/drive/start.png") no-repeat left center;
+}
+.end{
+    background: url("../../assets/images/drive/end.png") no-repeat left center;
+}
+.minus{
+    background: url("../../assets/images/drive/minus.png") no-repeat left center;
+}
+div img{
+    cursor: pointer;
+}
+
+#info-results{
+    position: absolute;
+    top: 0;
+    display: none;
+}
+/**
+*===========================================
+*驾车出行结果列表样式
+*===========================================
+**/
+.total-panel{
+    padding-top: 10px;
+    padding-left: 4px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    cursor: pointer;
+}
+
+hr{
+    margin-top: 3px;
+    border: 0;
+    border-top: 1px solid #eee;
+    margin-bottom: 2px;
+}
+
+
+/***
+*====================================
+*以下css用于控制重复途经点样式
+*====================================
+*/
+#opt-panel{
+    display: none;
+}

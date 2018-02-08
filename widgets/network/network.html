@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title></title>
+    <!--styles-->
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.min.css">
+    <!--[if IE]>
+    <link type="text/css" href="network_ie.css" rel="stylesheet"/>
+    <![endif]-->
+    <!--[if !IE]><!-->
+    <link type="text/css" href="network.css" rel="stylesheet">
+    <!--<![endif]-->
+
+
+
+    <script src="../../libs/jquery/jquery.js"></script>
+
+    <script src="../../libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../libs/bootstrap/js/bootstrap-typeahead.min.js"></script>
+
+    <script src="../../env.js"></script>
+    <script src="../../../../arcgis_js_api/library/3.13/init.js"></script>
+
+    <script src="network.js"></script>
+
+</head>
+<body>
+<div class="top-border">
+   <!-- <label class="tab tab-bus-clicked" id="tab-bus">公交</label>
+    <img src="../../assets/images/common/arrow.png"  id="arrow-left">-->
+    <label class="tab tab-drive" id="tab-drive">驾车</label>
+    <img src="../../assets/images/common/arrow.jpg" id="arrow-left">
+
+</div>
+
+<div id="drive" class="content-border">
+    <div class="input-top">
+        
+        <div class="left" id="driveChange">
+            <img src="../../assets/images/drive/change.png">
+        </div>
+
+        <div class="middle">
+
+            <div class="hor-box">
+                <img src="../../assets/images/drive/start.png">
+                <input id="drive-start" type="text" class="input-box"  placeholder="请输入起点">
+                <!--<div>-->
+                    <!--<img src="../../assets/images/drive/add.png" id="add-point" title="添加起点" class="btn-minus">-->
+                <!--</div>-->
+                <img src="../../assets/images/drive/add.png" id="add-point" title="添加起点" class="btn-minus">
+            </div>
+           <!-- <div class="hor-box" >
+                <img src="../../assets/images/drive/start.png">
+                <input type="text" class="input-box">
+                <img src="../../assets/images/drive/add.png">
+            </div>
+            <div class="hor-box" >
+                <img src="../../assets/images/drive/start.png">
+                <input type="text" class="input-box">
+                <img src="../../assets/images/drive/add.png">
+            </div>
+            <div class="hor-box" >
+                <img src="../../assets/images/drive/start.png">
+                <input type="text" class="input-box">
+                <img src="../../assets/images/drive/add.png">
+            </div>-->
+
+            <div id="passes">
+
+                <!--<div class="hor-box">
+
+                    <img src="../../assets/images/drive/start.png">
+                    <input type="text" class="input-box" placeholder="请输入途径点">
+                    <img src="../../assets/images/drive/minus.png">
+                </div>-->
+            </div>
+
+            <div class="hor-box">
+
+                <img src="../../assets/images/drive/end.png">
+                <input id="drive-end" type="text" class="input-box" placeholder="请输入终点">
+
+            </div>
+        </div>
+        <div class="right" id="ctn-search">
+            <a id="query" class="drive-label">搜索</a>
+        </div>
+    </div>
+
+    <hr class="line">
+    <div class="input-option">
+        <label class="adv distance-clicked" id="time-short">时间最短</label>
+        <label class="adv distance" id="dist-short">距离最短</label>
+        <label class="adv speed" id="no-speed">不走高速</label>
+    </div>
+
+    <div class="results" id="results">
+
+    </div>
+</div>
+
+<!--<div id="opt-panel" class="content-border list-group">-->
+
+<!--</div>-->
+<!--<div class="content-border">
+
+
+</div>-->
+
+
+<!--<div class="panel panel-default">
+    <table class="table table-bordered" id="service-list"></table>
+</div>-->
+
+<!--<div id="pagers">
+    <ul class="pager" id="page-group" style="display: none;">
+        <li><a id="prev" href="#">上一页</a></li>
+        <li><a id="next" href="#">下一页</a></li>
+    </ul>
+</div>-->
+</body>
+</html>

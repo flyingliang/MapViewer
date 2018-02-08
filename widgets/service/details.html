@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!--[if IE]>
+    <link type="text/css" href="details_ie.css" rel="stylesheet"/>
+    <![endif]-->
+    <!--[if !IE]><!-->
+    <link type="text/css" href="details.css" rel="stylesheet">
+    <!--<![endif]-->
+
+    <script src="../../libs/jquery/jquery.js"></script>
+   <!-- <script src="../../libs/bootstrap/js/bootstrap.min.js"></script>-->
+    <!--<script src="../../env.js"></script>-->
+
+    <!--<script src="../../../../arcgis_js_api/library/3.13/init.js"></script>-->
+
+  <!--  <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.min.css">-->
+    <!--<script src="servicelist.js"></script>-->
+
+    <script src="details.js"></script>
+
+    <!--<link rel="stylesheet" href="details.css">-->
+
+
+</head>
+<body>
+    <div class="title" id="service-title">
+
+    </div>
+    <div class="thumb-div">
+
+        <img  id="thumb" alt="no image">
+        <div style="width: 20px; height: 2px; display: table-cell; vertical-align: middle"></div>
+
+        <div class="right-content">
+
+            <div class="row-info">
+                <label class="tips-left">服务描述</label>
+                <label class="tips-right" id="description"></label>
+            </div>
+            <div class="row-info">
+                <label class="tips-left">创建时间</label>
+                <label class="tips-right" id="create-time"></label>
+            </div>
+
+            <div class="row-info">
+                <label class="tips-left">收藏次数</label>
+                <label class="tips-right" id="service-count"></label>
+            </div>
+        </div>
+    </div>
+    <div class="url-div">
+        <div>
+            <label class="tips-left">Result调用地址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><a class="tips-right" id="rest-url"></a>
+        </div>
+
+        <div>
+            <label class="tips-left">SOAP调用地址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><a class="tips-right" id="soap-url"></a>
+        </div>
+    </div>
+
+    <div class="ext-info">
+        <label>扩展信息</label>
+    </div>
+
+    <div id="ext-info">
+
+    </div>
+</body>
+</html>

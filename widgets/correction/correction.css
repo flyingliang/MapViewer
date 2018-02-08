@@ -1,0 +1,295 @@
+body{
+    font-family: "Microsoft YaHei";
+    /*font-weight: 700;*/
+    font-size: 12px;
+
+}
+.correct-panel{
+    position: absolute;
+    bottom: 15px;
+    top: 54px;
+    left: 0;
+    right:0;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.correct-label{
+    /*font-size: 12px;*/
+    color: #545454;
+}
+
+#description{
+    font-weight: 700;
+    color: #3b3b3b;
+    width: 187px;
+    border: solid;
+    border-color: #14a1ff;
+    border-width: 1px;
+    /* padding: 2px; */
+    margin-left: 12px;
+    font-weight: normal;
+    padding-left: 8px;
+}
+.res-item{
+    width: 80px;
+    display: inline;
+}
+.last-line{
+    margin-top: -21px;
+    border-top: 1px solid #ddd;
+}
+
+.input{
+    width: 189px;
+    height: 23px;
+    line-height: 23px;
+    border: solid;
+    border-color: #14a1ff;
+    border-width: 1px;
+    padding-left: 8px;
+    margin-left: 10px;
+}
+
+#result-panel{
+    color: #14a1ff;
+
+
+}
+/*.correct-row{
+   display: block;
+}*/
+
+.corr-type{
+
+    cursor: pointer;
+    background: url("../../assets/images/common/opt1.png") no-repeat left center;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+/*.corr-type:hover{*/
+    /*background: url("../../assets/images/common/opt2.png") no-repeat left center;*/
+    /*padding-left: 20px;*/
+/*}*/
+/**/
+.corr-type-clicked{
+    background: url("../../assets/images/common/opt2.png") no-repeat left center;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+#province-list{
+    /*height: 32px;
+    width: 100px;*/
+    width: 199px;
+}
+#city-list{
+    width: 199px;
+}
+.info-btn{
+    width: 73px;
+    height: 32px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.submit{
+
+    /*width: 73px;
+    height: 32px;*/
+    position: relative;
+    left: 110px;
+    right: 110px;
+    top: 30px;
+    background: url("../../assets/images/correction/submit1.png") no-repeat left center;
+}
+.submit:hover{
+    background:url("../../assets/images/correction/submit2.png") no-repeat left center;
+}
+.next{
+    cursor: pointer;
+   /* width: 72px;
+    height: 32px;*/
+    position: relative;
+    left: 110px;
+    right: 110px;
+    top: 30px;
+    background: url("../../assets/images/correction/next1.png") no-repeat left center ;
+}
+.next:hover{
+    background: url("../../assets/images/correction/next2.png") no-repeat left center;
+}
+
+.submit-clicked{
+
+}
+td div{
+    width: 73px;
+    height: 32px;
+}
+
+td label{
+    width: 48px;
+    height: 28px;
+}
+
+
+#info{
+
+    /*display: block;*/
+}
+
+.info-row{
+    display: table;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.info-row label{
+
+    text-align: right;
+}
+
+.info-row select{
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+    /*padding-left: 10px;*/
+    /*margin-left: 10px;*/
+    /*height: 28px;*/
+    height: 28px;
+    line-height: 28px;
+}
+.info-row img{
+    margin-left: 21px;
+    cursor: pointer;
+}
+
+
+
+.left-td{
+
+    width: 60px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.right-td{
+    width: 100%;
+    /*float: right;*/
+    margin-left: 55px;
+}
+
+
+#adv-info{
+    display: none;
+}
+
+
+/*upload input type=file  style */
+
+/*.file-box{
+    position:relative;
+    width: 212px;
+}*/
+.txt{
+    height: 22px;
+    border: none;
+    border-bottom-style: solid;
+    border-color: #14a1ff;
+    border-width: 1px;
+    width: 170px;
+    background-color: transparent;
+    left: 25px;
+    position: relative;
+    padding-left: 20px;
+}
+.upload{
+    display: inline;
+    vertical-align: middle;
+    position: absolute;
+    margin-top: 10px;
+    left: 50px;
+}
+/*.btn{
+    background-color:#FFF;
+    background: url("../../assets/images/common/clear.png") no-repeat left center;
+    /!*border:1px solid #CDCDCD;*!/
+    height:12px;
+    width:12px;
+
+}*/
+.file{
+    position: absolute;
+    /* top: 25px; */
+    left: -50px;
+    cursor: pointer;
+    filter: alpha(opacity:0);
+    opacity: 0;
+    height: 22px;
+    border: 1px solid #14a1ff;
+    width: 170px;
+    /* left: 10px; */
+}
+.file-panel{
+
+    width: 95%;
+    position: absolute;
+    margin-bottom: 5px;
+    margin-top: 1px;
+}
+.clear{
+    cursor: pointer;
+    float: right;
+    position: relative;
+    right: 30px;
+    z-index: 100;
+}
+.split-line{
+    color: #cdcdcd;
+    height: 2px;
+    width: 95%;
+    opacity: 0.7;
+}
+/***
+*====================================
+*以下css用于控制按钮样式
+*====================================
+*/
+.btn-correction{
+
+    border: solid;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: #14a1ff;
+
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.btn-correction:hover{
+    background-color: #14a1ff;
+    color: white;
+
+}
+.info-required{
+    color: #ff0000;
+    font-size: 18px;
+    font-family: "verdana, helvetica";
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+
+/*.btn-correction span{
+
+}
+.btn-correction span:hover{
+
+}*/

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+
+        <link rel="stylesheet" href="../../../css/common/page.css" type="text/css">
+        <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.min.css">
+        <!--[if IE]>
+        <link type="text/css" href="query_ie.css" rel="stylesheet"/>
+        <![endif]-->
+        <!--[if !IE]><!-->
+        <link type="text/css" href="query.css" rel="stylesheet">
+        <!--<![endif]-->
+        <link rel="stylesheet" href="../network/network.css">
+    </head>
+    <body>
+
+        <!--首页面板-->
+        <div id="homes" class="query-panel">
+            <table id="poilist" class="table"></table>
+            <hr>
+        </div>
+
+        <!--结果面板-->
+        <div id="results" class="query-panel">
+
+            <table class="table">
+                <tbody id="contents"></tbody>
+            </table>
+            <hr class="last-line">
+
+            <!--分页控件-->
+            <div class="page-div">
+                <ul id="pagers"></ul>
+            </div>
+        </div>
+
+        <div id="info-results" class="panel panel-body results query-panel"></div>
+
+        <!--<div style="font-family:'Helvetica, Arial, sans-serif';font-size: 14px;">-->
+        <!--<h3>hello the world...</h3>-->
+        <!--</div>-->
+
+
+        <script src="../../env.js"></script>
+        <script src="../../../../arcgis_js_api/library/3.13/init.js"></script>
+
+        <script src="../../libs/jquery/jquery.js"></script>
+        <script src="../../libs/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../../libs/bootstrap/js/bootstrap-paginator.min.js"></script>
+
+        <script src="query.js"></script>
+        <script src="../../../js/pager.js"></script>
+    </body>
+</html>

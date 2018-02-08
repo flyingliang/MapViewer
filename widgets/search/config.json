@@ -1,0 +1,167 @@
+{
+  "title":"POI搜索",
+  "link":"",
+
+  "url":"http://124.205.245.98:9923/OneMapServer/rest/services/CQ_POI/MapServer/0",
+  "template":"",
+  "oidfield":"OBJECTID",
+  "nameField":"name",
+
+  "fields":[
+    {"name":"name","alias":"名称","isShow":true},
+    {"name":"Address","alias":"地址","isShow":true},
+    {"name":"Telephone","alias":"电话","isShow":false}
+  ],
+  "expression":"name Like '%${name}%'",
+  "citymatch":"PAC like '${city}%'",
+
+  "districtmatch":"PAC = '${district}'",
+
+  "catalogmatch":"type like '${type}%'",
+
+  "subcatalogmatch":"Type2 ='${subtype}'",
+
+
+  "relatedtable":{
+    "url":"",
+    "expression":"",
+    "multimediafield":""
+  },
+
+
+  "normalSymbol":{
+    "color": [109,152,255,188],
+    "size": 12,
+    "angle": -30,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriSMS",
+    "style": "esriSMSCircle",
+    "outline": {
+      "color": [0,0,0,0],
+      "width": 1,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    }
+  },
+
+  "highlightSymbol":{
+    "url":"assets/images/common/right1.png",
+    "height":28,
+    "width":20,
+    "type":"esriPMS",
+    "xoffset":0,
+    "yoffset": 0
+  },
+
+  "clickedSymbol":{
+    "url":"assets/images/common/right2.png",
+    "height":28,
+    "width":20,
+    "type":"esriPMS",
+    "xoffset":0,
+    "yoffset": 0
+  },
+
+  "textSymbol":{
+    "type": "esriTS",
+    "color": [255,255,255,255],
+    "backgroundColor": [0,0,0,0],
+    "borderLineSize": 2,
+    "borderLineColor": [255,0,255,255],
+    "haloSize": 2,
+    "haloColor": [0,255,0,255],
+    "verticalAlignment": "middle",
+    "horizontalAlignment": "center",
+    "rightToLeft": false,
+    "angle": 0,
+    "xoffset":0 ,
+    "yoffset": 4,
+    "kerning": true,
+    "font": {
+      "family": "Arial",
+      "size": 11,
+      "style": "normal",
+      "weight": "600",
+      "decoration": "none"
+    }
+  },
+  "poicatalogs":[
+
+    {
+      "id":"canyin",
+      "name":"餐饮",
+      "code":"901",
+      "icon":"../../assets/images/search/canyin1.png",
+      "icon2":"../../assets/images/search/canyin2.png"
+    },
+
+    {
+      "id":"gouwu",
+      "name":"购物",
+      "code":"06",
+      "icon":"../../assets/images/search/gouwu1.png",
+
+      "icon2":"../../assets/images/search/gouwu2.png"
+    },
+    {
+      "id":"zhusu",
+      "name":"住宿",
+      "code":"10",
+      "icon":"../../assets/images/search/zhusu1.png",
+      "icon2":"../../assets/images/search/zhusu2.png"
+    },
+    {
+      "id":"chuxing",
+      "name":"出行",
+      "code":"15",
+      "icon":"../../assets/images/search/chuxing1.png",
+      "icon2":"../../assets/images/search/chuxing2.png"
+    },
+    {
+      "id":"yule",
+      "name":"娱乐",
+      "code":"08",
+      "icon":"../../assets/images/search/yule1.png",
+      "icon2":"../../assets/images/search/yule2.png"
+    },
+    {
+      "id":"jinrong",
+      "name":"金融",
+      "code":"16",
+      "icon":"../../assets/images/search/jinrong1.png",
+      "icon2":"../../assets/images/search/jinrong2.png"
+    },
+    {
+      "id":"jiaoyu",
+      "name":"教育",
+      "code":"14",
+      "icon":"../../assets/images/search/jiaoyu1.png",
+      "icon2":"../../assets/images/search/jiaoyu2.png"
+    },{
+      "id":"yiliao",
+      "name":"医疗",
+      "code":"09",
+      "icon":"../../assets/images/search/yiliao1.png",
+      "icon2":"../../assets/images/search/yiliao2.png"
+
+    },{
+      "id":"lvyou",
+      "name":"旅游",
+      "code":"12",
+      "icon":"../../assets/images/search/lvyou1.png",
+      "icon2":"../../assets/images/search/lvyou2.png"
+    },
+    {
+      "id":"zhengfu",
+      "name":"政府",
+      "code":"12",
+      "icon":"../../assets/images/search/zhengfu1.png",
+      "icon2":"../../assets/images/search/zhengfu2.png"
+    }
+  ],
+
+  "zoomlevel":13
+
+
+}

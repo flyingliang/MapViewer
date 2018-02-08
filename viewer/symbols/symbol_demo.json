@@ -1,0 +1,91 @@
+{
+  "description":"设置程序中符号的模板，主要用于配置symbolUtil类中创建的符号",
+
+  "simpleMarkerSymbol":{
+    "color": [255,255,255,64],
+    "size": 12,
+    "angle": -30,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriSMS",
+    "style": "esriSMSCircle",
+    "outline": {
+      "color": [0,0,0,255],
+      "width": 1,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    }
+  },
+
+  "simpleLineSymbol":{
+    "type": "esriSLS",
+    "style": "esriSLSDot",
+    "color": [115,76,0,255],
+    "width": 1
+  },
+
+  "simpleFillSymbol":{
+    "type": "esriSFS",
+    "style": "esriSFSSolid",
+    "color": [115,76,0,255],
+    "outline": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [110,110,110,255],
+      "width": 1
+    }
+  },
+  "pictureMarkerSymbol":{
+
+    "url":"graphics/redArrow2.png",
+    "height":20,
+    "width":20,
+    "type":"esriPMS",
+    "angle": -30
+  },
+
+  "pictureFillSymbol":{
+
+    "type" : "esriPFS",
+    "url" : "866880A0",
+    "contentType" : "image/png",
+    "outline" :
+    {
+      "type" : "esriSLS",
+      "style" : "esriSLSSolid",
+      "color" : [110,110,110,255],
+      "width" : 1
+    },
+    "width" : 63,
+    "height" : 63,
+    "angle" : 0,
+    "xoffset" : 0,
+    "yoffset" : 0,
+    "xscale" : 1,
+    "yscale" : 1
+  },
+
+  "textSymbol":{
+    "type": "esriTS",
+    "color": [78,78,78,255],
+    "backgroundColor": [0,0,0,0],
+    "borderLineSize": 2,
+    "borderLineColor": [255,0,255,255],
+    "haloSize": 2,
+    "haloColor": [0,255,0,255],
+    "verticalAlignment": "bottom",
+    "horizontalAlignment": "left",
+    "rightToLeft": false,
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "kerning": true,
+    "font": {
+      "family": "Arial",
+      "size": 12,
+      "style": "normal",
+      "weight": "bold",
+      "decoration": "none"
+    }
+  }
+}

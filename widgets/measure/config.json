@@ -1,0 +1,112 @@
+{
+  "textSymbol":{
+    "type": "esriTS",
+    "color": [211, 48, 91, 255],
+    "backgroundColor": [67,0,255,40],
+    "borderLineColor": [ 67, 0, 255, 40 ],
+    "haloSize": 2,
+    "haloColor":[ 67, 0, 255, 40 ],
+    "verticalAlignment": "bottom",
+    "horizontalAlignment": "left",
+    "rightToLeft": false,
+    "angle": 0,
+    "xoffset":10 ,
+    "yoffset": -10,
+    "kerning": true,
+    "font": {
+      "family": "Arial",
+      "size": 12,
+      "style": "normal",
+      "weight": "bold",
+      "decoration": "none"
+    }
+  },
+
+  "totalSymbol":{
+    "type": "esriTS",
+    "color": [211, 48, 91, 255],
+    "backgroundColor": [255,0,0,255],
+    "borderLineSize": 2,
+    "borderLineColor": [255,0,255,255],
+    "haloSize": 2,
+    "haloColor": [0,255,0,255],
+    "verticalAlignment": "bottom",
+    "horizontalAlignment": "left",
+    "rightToLeft": false,
+    "angle": 0,
+    "xoffset":20 ,
+    "yoffset":10,
+    "kerning": true,
+    "font": {
+      "family": "Arial",
+      "size": 12,
+      "style": "normal",
+      "weight": "bold",
+      "decoration": "none"
+    }
+  },
+
+  "startSymbol":{
+    "type" : "esriPMS",
+    "url" : "assets/images/common/start.png",
+    "width" : 21,
+    "height" :25,
+    "angle" : 0,
+    "xoffset" : 0,
+    "yoffset" : 0
+  },
+
+  "endSymbol":{
+    "type" : "esriPMS",
+    "url":"assets/images/common/end.png",
+    "width":21,
+    "height":26,
+    "angle" : 0,
+    "xoffset" : 0,
+    "yoffset" : 0
+  },
+
+  "closeSymbol":{
+    "type" : "esriPMS",
+    "url":"assets/images/common/delete.png",
+    "width":16,
+    "height":16,
+    "angle" : 0,
+    "xoffset" :11,
+    "yoffset" : 22
+  },
+
+  "vertexSymbol":{
+    "type": "esriSMS",
+    "style": "esriSMSCircle",
+    "color": [255,255,255,140],
+    "size": 8,
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "outline":
+    {
+      "color": [255,0,0,255],
+      "width": 1
+    }
+  },
+  "lineSymbol":{
+    "type": "esriSLS",
+    "style": "esriSLSSolid ",
+    "color": [255,0,0,255],
+    "width": 2
+  },
+
+  "fillSymbol":{
+    "type": "esriSFS",
+    "style": "esriSFSSolid",
+    "color": [136,136,136,90],
+    "outline": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [255,0,0,180],
+      "width": 2
+    }
+  }
+
+}

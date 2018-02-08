@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-family: "Microsoft YaHei";
+}
+.login{
+    background: #56c067;
+    border-radius: 5px;
+    border-color: #56c067;
+    border-width: 1px;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 94px;
+    height: 32px;
+    color: #ffffff;
+    float: right;
+    margin-right: 45px;
+}
+
+#myModalLabel2{
+    color: white;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 14px;
+    font-family:"Microsoft YaHei";
+
+}
+.input-info {
+    border: solid;
+    border-color: #14a1ff;
+    border-width: 1px;
+    padding-left: 8px;
+    padding-top: 5px;
+    width: 248px;
+    height: 25px;
+    line-height: 28px;
+    margin-left: 5px;
+}
+
+.login-cancel {
+    position: relative;
+    margin-left: 190px;
+    background-color: transparent;
+    border: none;
+    margin-top: 6px;
+    color: #14a1ff;
+    cursor: pointer;
+}
+
+.login-action {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.login-title{
+    background-color: #14a1ff;
+    height: 35px;
+    /* display: table; */
+    padding: 5px;
+    /* padding-right: 0; */
+    /* width: 385px; */
+}
+#login-err {
+    color: red;
+    display: none;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 100px;
+}
+.login-content {
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    /* padding-bottom: 10px; */
+}
+.login-row{
+    /*display:inline;*/
+    /*margin-top: 10px;*/
+    /*padding-top: 10px;*/
+}
+
+.login-row label{
+
+    color: #0094f6;
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+}
+.login-split{
+    width:100%;
+    height:12px;
+}
+
+#login-info{
+    margin-right: 15px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+
+#lbl-login{
+    margin-right: 15px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.login-label{
+    margin-left: 1px;
+}
